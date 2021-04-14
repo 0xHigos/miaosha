@@ -13,11 +13,11 @@
 
 ##### 第一章 :框架搭建
 
-+ + spring boot项目框架搭建
++ spring boot项目框架搭建
 
-+ - 集成thymeleaf,result结果封装
-+ - 集成Mybatis + druid
-+ - 集成jedis + redis 安装 + 通用缓存key封装
++ 集成thymeleaf,result结果封装
++ 集成Mybatis + druid
++ 集成jedis + redis 安装 + 通用缓存key封装
 
 ##### 第二章：实现登录功能
 
