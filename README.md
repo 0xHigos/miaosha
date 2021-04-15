@@ -1,9 +1,10 @@
 # miaosha
+
 本文章基础思路来自于慕课网若鱼1919老师 ( https://coding.imooc.com/class/168.html)
 
 技术栈： springboot + redis + rabbitMQ + nginx + mysql
 
-学习目的：(应对大并发) 
+学习目的：(应对大并发)
 
 + 如何利用缓存
 + 如何使用异步
@@ -23,7 +24,7 @@
 
 + 数据库设计
 + 明文密码两次md5处理
-+ JSR303 参数检验  + 全局异常处理器
++ JSR303 参数检验 + 全局异常处理器
 + 分布式Session
 
 ##### 第三章：实现秒杀功能
@@ -35,7 +36,7 @@
 
 ##### 第四章：Jmeter 压测
 
-+ Jmeter 
++ Jmeter
 + 自定义变量模拟多用户
 + Jmeter命令行使用
 + Spring boot 打war包
