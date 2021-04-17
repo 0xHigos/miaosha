@@ -1,5 +1,7 @@
 package com.xujie.miaosha.result;
 
+import com.sun.org.apache.bcel.internal.classfile.Code;
+
 public class CodeMsg {
     private int code;
     private String msg;
@@ -36,5 +38,11 @@ public class CodeMsg {
 
     public String getMsg() {
         return msg;
+    }
+
+    public CodeMsg fillArgs( Object... args ) {
+        int code = this.code;
+        String message = String.format(this.msg, args);
+        return new CodeMsg(code, message);
     }
 }
