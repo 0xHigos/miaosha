@@ -23,9 +23,10 @@ public class MD5Util {
 
     public static String inputPassToDbPass( String input, String saltDb ) {
         String fromPass = inputPassFromPass(input);
-        String dbPass = fromPassToDBPass(input, saltDb);
+        String dbPass = fromPassToDBPass(fromPass, saltDb);
         return dbPass;
     }
+
 
     public static void main( String[] args ) {
         System.out.println(inputPassFromPass("123456"));

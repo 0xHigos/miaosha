@@ -16,16 +16,18 @@ public class CodeMsg {
     public static CodeMsg PASSWORD_EMPTY = new CodeMsg(500211, "登录密码不能为空");
     public static CodeMsg MOBILE_EMPTY = new CodeMsg(500212, "手机号不能为空");
     public static CodeMsg MOBILE_ERROR = new CodeMsg(500213, "手机号格式错误");
-    public static CodeMsg MOBILE_NOT_EXIST = new CodeMsg(500214, "手机号不存在");
+    public static CodeMsg MOBILE_NOT_EXIST = new CodeMsg(500213, "手机号号码不存在");
     public static CodeMsg PASSWORD_ERROR = new CodeMsg(500215, "密码错误");
+
     //登录模块 5002XX
 
     //商品模块 5003XX
 
     //订单模块 5004XX
-
+    public static CodeMsg ORDER_NOT_EXISTS = new CodeMsg(500400, "订单不存在");
     //秒杀模块 5005XX
-
+    public static CodeMsg MIAO_SHA_ORVER = new CodeMsg(500500, "商品已经秒杀完毕");
+    public static CodeMsg REPEAT_MIAO_SHA = new CodeMsg(500501, "不能重复秒杀");
 
     private CodeMsg( int code, String msg ) {
         this.code = code;

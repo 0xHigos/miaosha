@@ -36,8 +36,8 @@ public class LoadingController {
 
     @RequestMapping("/do_login")
     @ResponseBody
-    public Result<Boolean> doLogin( HttpServletResponse response, @Valid LoginVo loginVo ) {
-        miaoshaUserService.login(response, loginVo);
-        return Result.success(true);
+    public Result<String> doLogin( HttpServletResponse response, @Valid LoginVo loginVo ) {
+        String token = miaoshaUserService.login(response, loginVo);
+        return Result.success(token);
     }
 }

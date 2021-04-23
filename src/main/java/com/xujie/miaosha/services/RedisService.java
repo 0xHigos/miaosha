@@ -102,6 +102,23 @@ public class RedisService {
         }
     }
 
+
+    /*
+     * 删除缓存
+     * */
+    public boolean delete( KeyPrefix prefix, String key ) {
+        Jedis jedis = null;
+        try {
+            jedis = pool.getResource();
+            //生成真正的key
+            String realKey = prefix.getPrefix() + key;
+            Long del = jedis.del(key);
+            return del > 0;
+        } finally {
+            returnToPool(jedis);
+        }
+    }
+
     private <T> String beanToString( T value ) {
         if (value == null) {
             return null;
